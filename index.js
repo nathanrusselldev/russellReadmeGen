@@ -57,6 +57,16 @@ inquirer
         name: 'licenseChoice',
 
         },
+        {
+        type: 'input',
+        message: 'What is your e-mail',
+        name: contactEmail
+        },
+        {
+        type: 'input',
+        message: 'What is your github username?',
+        name: contactGithub
+        },
 
     ])
 

@@ -13,8 +13,8 @@ function renderLicenseBadge(license) {
 
       break;
 
-      case "CC0":
-        link = "[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)";
+      case "CC0" :
+        link = "[![License: CC0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
 
       break;
 
@@ -41,7 +41,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
 return (
 
-`# ${data.projectTitle}
+`# ${data.projectTitle}   ${renderLicenseBadge(data.licenseChoice)}
 
 # Table of Contents
 
@@ -51,6 +51,7 @@ return (
   * [Contributing](#Contributing)
   * [Tests](#Testing)
   * [License](#License)
+  * [Contact](#Contact)
 
 # Description
 
@@ -77,6 +78,12 @@ return (
 ${renderLicenseLink(data.licenseChoice)}
 ${renderLicenseBadge(data.licenseChoice)}
 
+# Contact
+
+If you have any questions or concerns I can be contacted via e-mail or github.
+
+  * mailto:${data.contactEmail}
+  * [https://github.com/${data.contactGithub}/](https://github.com/${data.contactGithub}/)
 
 `);
 }
