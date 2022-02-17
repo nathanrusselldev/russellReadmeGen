@@ -1,0 +1,23 @@
+{
+  "name": "russellreadmegen",
+  "version": "1.0.0",
+  "description": "This is a terminal based readme generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanrusselldev/russellReadmeGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanrusselldev/russellReadmeGen/issues"
+  },
+  "homepage": "https://github.com/nathanrusselldev/russellReadmeGen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
