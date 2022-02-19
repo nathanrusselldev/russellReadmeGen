@@ -59,21 +59,20 @@ inquirer
         },
         {
         type: 'input',
-        message: 'What is your e-mail',
-        name: contactEmail
+        message: 'What is your e-mail?',
+        name: 'contactEmail',
         },
         {
         type: 'input',
         message: 'What is your github username?',
-        name: contactGithub
+        name: 'contactGithub',
         },
 
     ])
 
     .then ((data) => {
-        console.log(data)
-        fs.writeFile('readme.md', generateMarkdown(data) , (err) => 
-            err ? console.log("you done goofed") : console.log("you done won")
+        fs.writeFile('./Output/readme.md', generateMarkdown(data) , (err) => 
+            err ? console.log("You missed some fields. Please start over.") : console.log("Readme created.")
         );
     });
 

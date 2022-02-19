@@ -83,11 +83,11 @@ ${renderLicenseBadge(data.licenseChoice)}
 If you have any questions or concerns I can be contacted via e-mail or github.
 
   * mailto:${data.contactEmail}
-  * [https://github.com/${data.contactGithub}/](https://github.com/${data.contactGithub}/)
-
+  * [https://github.com/${data.contactGithub}/](https://github.com/${data.contactGithub})
 `);
 }
 
 
 module.exports = generateMarkdown;
+
 
