@@ -40,4 +40,4 @@ Apache 2.0
 If you have any questions or concerns I can be contacted via e-mail or github.
 
   * mailto:nathanrussell.it@Gmail.com
-  * [!https://github.com/nathanrusselldev/](https://github.com/nathanrusselldev)
+  * [https://github.com/nathanrusselldev/](https://github.com/nathanrusselldev)
